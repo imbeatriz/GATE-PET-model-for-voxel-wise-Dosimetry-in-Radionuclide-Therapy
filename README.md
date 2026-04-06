@@ -1,4 +1,4 @@
-# GAT PET Model for Voxel-Wise Dosimetry in Radionuclide Therapy
+# GATE PET Model for Voxel-Wise Dosimetry in Radionuclide Therapy
 
 **GATE (Geant4 Application for Tomographic Emission)** is an open-source software developed by the international OpenGATE collaboration for Monte Carlo (MC) simulations in medical physics. Built on top of GEANT4 (GEometry ANd Tracking), it allows realistic modeling of radiation transport and emission tomography systems. It plays a key role in the design and optimization of imaging systems, the development of advanced image processing algorithms, and the implementation of MC dosimetry approaches.
 
