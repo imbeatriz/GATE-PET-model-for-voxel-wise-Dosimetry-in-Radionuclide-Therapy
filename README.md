@@ -12,7 +12,6 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 
  <img width="4346" height="1993" alt="githubscheme" src="https://github.com/user-attachments/assets/aa954e17-3420-48ca-b533-6e0d5a71adc2" />
 
-
 ## Repository Structure
 
 ### Patient-specific Phantom
@@ -30,13 +29,13 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 - **CASToR Tools** - Graphical user interface (GUI) and utilities for CASToR reconstruction, including conversion from interfile format to NIfTI.  
   *(The code from this study ([GitHub](https://github.com/miguelleaolopes/HiRezBrainPET_git)) was used as a starting point and extended to provide a more user-friendly interface for GATE PET list-mode data processing, with added support for Linux environments.)* 
 - **PyTomography Scripts** - Adaptations to PyTomography source files for compatibilty with GATE PET model. Deep Image Prior (DIP) reconstruction and main reconstruction files, including parameter configurations and corresponding reconstruction results.
-- **PET Reconstructed Images Analysis/** - Quantitative evaluation and comparison of reconstructed simulated PET images (CASToR vs PyTomography) against ground-truth PET.
+- **PET Reconstructed Images Analysis** - Quantitative evaluation and comparison of reconstructed simulated PET images (CASToR vs PyTomography) against ground-truth PET.
 - **Activity Quantification** – Conversion of reconstructed PET images from relative count units to activity units.
 
 ### MC Dosimetry
 - **Dosimetry Calibration Tool** - Calibration of absorbed dose distributions accounting for ⁹⁰Y radioactive decay, administered activity, residual activity and lung shunt factor.
 - **MC-GATE Dosimetry Statistical Uncertainty Tool** – Tools for estimating statistical uncertainty (SU) in MC-GATE simulations for each VOI.
-- **Dosimetry Analysis** – Computation of mean absorbed doses for each VOI, including dose–volume histograms (DVHs) and dose bar distribution plots. Comparision of MC dosimetry results with the VSV method.
+- **Dosimetry Analysis** – Computation of mean absorbed doses for each VOI, including dose–volume histograms (DVHs) and dose bar distribution plots. Comparision of MC dosimetry results (ground-truth vs simulated PET) with the VSV method.
 
 #### Additional Notes
 Detailed descriptions of the files are provided in the individual `README.md` files within each folder.
