@@ -64,7 +64,7 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
   <em>Figure 1 – MC Dosimetry calibration Tool for RE
 </p>
   
-- **MC-GATE Dosimetry Statistical Uncertainty Tool** – Tools for estimating statistical uncertainty (SU) in MC-GATE simulations for each VOI.
+- **MC-GATE Dosimetry Statistical Uncertainty Tools** – Tools for estimating statistical uncertainty (SU) in MC-GATE simulations for each VOI.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/65d13b91-9fc3-4e85-a45a-bd5a2de71816" width="48%" />
