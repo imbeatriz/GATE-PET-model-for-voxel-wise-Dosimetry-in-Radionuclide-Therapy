@@ -36,7 +36,7 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
    - Normalization Simulation.
 - **⁹⁰Y Positron Energy Spectrum**  - Input data required for accurate modeling of the ⁹⁰Y radionuclide emission spectrum in PET acquisition simulations.
 
-### Image Reconstruction
+### PET Image Reconstruction
 - **CASToR Tools** - Graphical user interface (GUI) and utilities for CASToR reconstruction, including conversion from interfile format to NIfTI.  
   *(The code from this study ([GitHub](https://github.com/miguelleaolopes/HiRezBrainPET_git)) was used as a starting point and extended to provide a more user-friendly interface for GATE PET list-mode data processing, with added support for Linux environments.)*
   
