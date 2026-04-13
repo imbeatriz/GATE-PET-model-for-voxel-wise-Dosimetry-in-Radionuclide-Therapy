@@ -16,7 +16,7 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 ## Repository Structure
 
 ### Patient-specific Phantom
-- **Digital phantom** - Generation of patient-specific phantom in 3D Slicer and conversion for MC-GATE simulations.
+- **Digital phantom** - Generation of patient-specific phantom in 3D Slicer and conversion tool for MC-GATE simulations.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2b07108e-04b2-4cc3-b065-58e400505428" width="500" />
