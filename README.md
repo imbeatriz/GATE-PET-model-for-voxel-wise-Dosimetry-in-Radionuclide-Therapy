@@ -18,6 +18,14 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 ### Patient-specific Phantom
 - **Digital phantom** - Generation of patient-specific phantom in 3D Slicer and conversion for MC-GATE simulations.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2b07108e-04b2-4cc3-b065-58e400505428" width="500" />
+</p>
+
+<p align="center">
+  <em>Figure 1 – GATE Range Translator Generator Tool  
+</p>
+
 ### MC-GATE Simulations (GATE 9.2 version)
 - **GATE 9.2 Parallel Jobs Tools** - Tools for splitting MC-GATE simulations into multiple smaller jobs and executing them in parallel using Python multiprocessing. This approach reduces computation time by leveraging multiple CPU cores. A merging script combines the resulting ROOT output files into a single dataset.
 
