@@ -28,7 +28,7 @@ To address this limitation, the ⁹⁰Y positron activity source was modeled usi
 
 ### MC-GATE Simulation Files
 
-**This folder contains all macros used for the MC-GATE simulations performed in this work:**
+**This folder contains all macros scripts used for the MC-GATE simulations performed in this work:**
 
 - **[Y90_MCDosimetry_Simulation_digitalPhantom.mac](./MC-GATE%20Simulation%20Files/Y90_MCDosimetry_Simulation_digitalPhantom.mac)** – MC dosimetry simulation using digital phantom as the patient-specific model, with non-uniform ⁹⁰Y activity distribution and ⁹⁰Y electron spectrum from the DECDATA database.
 
