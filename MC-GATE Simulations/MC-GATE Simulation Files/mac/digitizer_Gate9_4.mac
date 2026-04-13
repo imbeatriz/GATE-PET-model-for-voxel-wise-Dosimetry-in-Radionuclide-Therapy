@@ -1,0 +1,91 @@
+#==========================================================
+#   DIGITIZER: DETECTOR ELECTRONIC RESPONSE - PHOTODETECTOR
+#==========================================================
+
+# PET SCANNER'S DATA PROCESSING PARAMETERS
+
+# Defined according to the "Monte Carlo simulation of digital photon counting PET" article
+
+# ADDER
+
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert adder
+
+# READOUT
+ 
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert                        readout
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/readout/setDepth              1
+
+# BACKGROUND NOISE
+
+/gate/distributions/name energy_distrib
+/gate/distributions/insert Gaussian
+/gate/distributions/energy_distrib/setMean 511 keV 
+/gate/distributions/energy_distrib/setSigma 1 keV 
+
+/gate/distributions/name dt_distrib 
+/gate/distributions/insert Exponential 
+/gate/distributions/dt_distrib/setLambda 2.17 us
+
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert noise 
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/noise/setDeltaTDistribution dt_distrib 
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/noise/setEnergyDistribution energy_distrib
+
+# ENERGY  BLURRING
+
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert energyResolution 
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/energyResolution/fwhmMin 0.112
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/energyResolution/fwhmMax 0.112
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/energyResolution/energyOfReference 511. keV
+
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert    efficiency
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/efficiency/setUniqueEfficiency 0.865
+
+# SINGLES TIMING RESOLUTION
+
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert timeResolution 
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/timeResolution/fwhm 220 ps
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/timeResolution/verbose 0
+
+# PILE - UP
+
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert pileup
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/pileup/setDepth 1 
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/pileup/setPileup 5.9 ns
+
+# DEADTIME
+
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert deadtime
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/deadtime/setDeadTime 5.9 ns
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/deadtime/setMode paralysable
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/deadtime/chooseDTVolume module
+
+# ENERGY  WINDOW
+
+# HIGH ENERGY CUT  
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert energyFraming  
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/energyFraming/setMin 449.68 keV
+/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/energyFraming/setMax 613.20 keV
+
+# PROMPT / COINCIDENCES WINDOW
+
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/setInputCollection Singles 
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/setOffset 0. ns
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/setWindow 2.0115 ns
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/minSectorDifference 5
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/MultiplesPolicy takeAllGoods
+
+## Uncomment for second method for coincidence sorting
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/allDigiOpenCoincGate true
+
+# DELAY WINDOW
+
+/gate/digitizerMgr/name   Delay
+/gate/digitizerMgr/insert   CoincidenceSorter
+/gate/digitizerMgr/CoincidenceSorter/Delay/setInputCollection   Singles
+/gate/digitizerMgr/CoincidenceSorter/Delay/setOffset   100 ns
+/gate/digitizerMgr/CoincidenceSorter/Delay/setWindow   2.0115 ns
+/gate/digitizerMgr/CoincidenceSorter/Delay/minSectorDifference 5
+/gate/digitizerMgr/CoincidenceSorter/Delay/MultiplesPolicy takeAllGoods
+
+## Uncomment for second method for coincidence sorting
+/gate/digitizerMgr/CoincidenceSorter/Delay/allDigiOpenCoincGate true
