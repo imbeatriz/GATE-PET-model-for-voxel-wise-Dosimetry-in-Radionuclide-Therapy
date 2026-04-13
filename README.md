@@ -38,7 +38,7 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 
 ### PET Image Reconstruction
 - **CASToR Tools** - Graphical user interface (GUI) and utilities for CASToR reconstruction, including conversion from interfile format to NIfTI.  
-  *(The code from this study ([GitHub](https://github.com/miguelleaolopes/HiRezBrainPET_git)) was used as a starting point and extended to provide a more user-friendly interface for GATE PET list-mode data processing, with added support for Linux environments.)*
+  *(The code from this study [[GitHub](https://github.com/miguelleaolopes/HiRezBrainPET_git)] was used as a starting point and extended to provide a more user-friendly interface for GATE PET list-mode data processing, with added support for Linux environments.)*
   
 <p align="center">
   <img src="https://github.com/user-attachments/assets/25fff246-fa67-4e4d-86c6-f35ecea7862d" width="48%" />
