@@ -27,7 +27,7 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 </p>
 
 ### MC-GATE Simulations (GATE 9.2 version)
-- **GATE 9.2 Parallel Jobs Tools** - Tools for splitting MC-GATE simulations into multiple smaller jobs and executing them in parallel using Python multiprocessing. This approach reduces computation time by leveraging multiple CPU cores. A merging script combines the resulting ROOT output files into a single dataset.
+- **GATE 9.2 Parallel Jobs Tools** - Tools for splitting MC-GATE simulations into multiple smaller jobs and executing them in parallel using Python multiprocessing. This approach reduces MC simulation computation time by leveraging multiple CPU cores. A merging script combines the resulting ROOT output files into a single dataset.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4832c1b9-328b-43f9-a5dc-ee48fa5e6de5" width="48%" />
