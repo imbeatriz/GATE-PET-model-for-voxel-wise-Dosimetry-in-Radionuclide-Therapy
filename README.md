@@ -1,6 +1,6 @@
 # GATE PET Model for Voxel-Wise Dosimetry in Radionuclide Therapy
 
-**GATE (Geant4 Application for Tomographic Emission)** is an open-source software developed by the international OpenGATE collaboration for Monte Carlo (MC) simulations in medical physics. Built on top of GEANT4 (GEometry ANd Tracking), it allows realistic modeling of radiation transport and emission tomography systems. It plays a key role in the design and optimization of imaging systems, the development of advanced image processing algorithms, and the implementation of MC dosimetry approaches.
+**GATE (Geant4 Application for Tomographic Emission)** is an open-source software developed by the international [OpenGATE collaboration](http://www.opengatecollaboration.org/) for Monte Carlo (MC) simulations in medical physics. Built on top of GEANT4 (GEometry ANd Tracking), it allows realistic modeling of radiation transport and emission tomography systems. It plays a key role in the design and optimization of imaging systems, the development of advanced image processing algorithms, and the implementation of MC dosimetry approaches.
 
 This repository contains the code developed as part of my Master’s thesis, focused on the implementation of a PET scanner model using **GATE** for **personalized voxel-wise dosimetry** of **Yttrium-90 (⁹⁰Y)** in patients undergoing **liver radioembolization (RE)**.
 
@@ -103,6 +103,41 @@ The macros developed in this project are intended for **GATE 9.x versions**, wit
 **GATE 9.2 (2022)** was selected as it was the most stable and well-validated release at the start of this work and has been extensively used in previous research. This project was developed and tested using the **Virtual Machine GATE 9.2 (vGATE 9.2)** package provided by the OpenGATE collaboration.
 
 Compatibility with newer versions (GATE 9.3 and 9.4) is possible. However, due to updates in the digitizer module, minor adaptations may be required. An additional macro file `digitizer_GATE9_4.mac` is provided in this repository with the necessary modifications for these newer GATE versions.
+
+### CASToR Requirements 
+
+[CASToR (Customizable Advanced Software for Tomographic Reconstruction)](https://castor-project.org/) is an open-source framework for medical image reconstruction.
+
+This project uses **CASToR v3.2** (Unix and Windows 64-bit). For compatibility with GATE, CASToR must be compiled with **ROOT support activated**.
+
+Detailed installation and configuration instructions are available in the official documentation:  
+[CASToR General Documentation](https://castor-project.org/sites/castor-project.org/files/2024-10/CASToR_general_documentation.pdf)
+
+### PyTomography Requirements
+
+[PyTomography](https://www.sciencedirect.com/science/article/pii/S235271102400390X) is a recent open-source Python library for medical image reconstruction. It provides a flexible framework supporting a wide range of reconstruction algorithms, including recent developments in deep learning (DL). PyTomography leverages GPU acceleration through **PyTorch** and **parallelproj** to enable efficient and high-performance computations.
+
+It is recommended to install PyTomography within a dedicated **conda environment**:
+
+```bash
+conda create -n pytomography_env python=3.9
+conda activate pytomography_env
+```
+**PET reconstruction requires parallelproj**, which can be installed in the same environment:
+
+```bash
+conda install -c conda-forge libparallelproj parallelproj cupy
+```
+**Note: The cupy package is required to enable GPU acceleration in parallelproj.**
+
+Install PyTomography on Python:
+
+```bash
+pip install pytomography
+```
+
+Detailed installation and configuration instructions are available in the official documentation:  
+[PyTomography General Documentation](https://pytomography.readthedocs.io/en/latest/index.html)
 
 ## Contact
 
