@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+scipy
+nibabel
+pydicom
+SimpleITK
+scikit-image
+ipywidgets
+ttkbootstrap
+Pillow
+notebook
+ipython
