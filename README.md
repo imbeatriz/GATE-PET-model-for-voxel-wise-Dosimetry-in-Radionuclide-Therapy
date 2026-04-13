@@ -89,6 +89,21 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 #### Additional Notes
 Detailed descriptions of the files are provided in the individual `README.md` files within each folder.
 
+## Installation
+
+To run the Python scripts and Jupyter notebooks, install the required packages listed in `required_packages.txt` using the following command:
+
+```bash
+pip install -r required_packages.txt
+```
+### GATE Requirements
+
+The macros developed in this project are intended for GATE 9.x versions, with primary support for GATE 9.2.
+
+GATE 9.2 (2022) was selected as it was the most stable and well-validated release at the start of this work and has been extensively used in previous research. This project was developed and tested using the Virtual Machine GATE 9.2 (vGATE 9.2) package provided by the OpenGATE collaboration.
+
+Compatibility with newer versions (GATE 9.3 and 9.4) is possible. However, due to updates in the digitizer module, minor adaptations may be required. An additional macro file `digitizer_GATE9_4.mac` is provided in this repository with the necessary modifications for these newer GATE versions.
+
 ## Contact
 
 Feel free to reach out if you have any questions or suggestions for improvement:
