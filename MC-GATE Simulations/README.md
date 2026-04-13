@@ -68,7 +68,7 @@ Tools for splitting MC-GATE simulations into multiple smaller jobs and executing
 
 **The following code was developed:**
 
-- **[GATE_Parallel_Job_Splitter&Runner.py](./GATE%209.2%20SParallel%20Jobs%20Tools/GATE_Parallel_Job_Splitter&Runner.py)** - This script automatically divides a MC-GATE simulation into multiple smaller jobs and executes them in parallel. Each job gets its own time window, unique output names, and separate log files.
+- **[GATE_Parallel_Job_Splitter&Runner.py](./GATE%209.2%20Parallel%20Jobs%20Tools/GATE_Parallel_Job_Splitter&Runner.py)** - This script automatically divides a MC-GATE simulation into multiple smaller jobs and executes them in parallel. Each job gets its own time window, unique output names, and separate log files.
 
     **Usage Example:**
     ```bash
@@ -84,7 +84,7 @@ Tools for splitting MC-GATE simulations into multiple smaller jobs and executing
   <em>Figure 1 – GATE parallel job tool usage overview &nbsp;&nbsp;&nbsp;&nbsp; Figure 2 – Example execution of the parallel job tool</em>
 </p>
 
-- **[GATE_ROOT_Files_Merger.py](./GATE%209.2%20SParallel%20Jobs%20Tools/GATE_ROOT_Files_Merger.py)** - This script merges multiple GATE ROOT output files in a folder into a single ROOT file.
+- **[GATE_ROOT_Files_Merger.py](./GATE%209.2%20Parallel%20Jobs%20Tools/GATE_ROOT_Files_Merger.py)** - This script merges multiple GATE ROOT output files in a folder into a single ROOT file.
 
     **Usage Example:**
     ```bash
