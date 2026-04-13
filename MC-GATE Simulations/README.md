@@ -4,7 +4,7 @@ Two types of MC-GATE simulations were performed:
 
 - **PET simulations**: Performed using the implemented **GATE PET model** (digital twin of the Philips Vereos PET/CT scanner). PET acquisition simulations using a patient-specific phantom and a non-uniform ⁹⁰Y activity distribution derived from the patient’s PET image (ground-truth PET).
 
-- **MC dosimetry**: Performed using ground-truth and simulated PET images as ⁹⁰Y activity distribution sources. GATE simulates absorbed dose deposition in a patient-specific phantom using the corresponding non-uniform ⁹⁰Y activity distributions, allowing later comparison between ground-truth and simulated PET inputs of the dosimetry results.
+- **MC dosimetry**: Performed using ground-truth and simulated PET images as ⁹⁰Y activity distribution sources. GATE simulates absorbed dose deposition in a patient-specific phantom using the corresponding non-uniform ⁹⁰Y activity distributions, allowing later comparison between the dosimetry results.
 
 ### Y90 Positron Energy Spectrum
 
