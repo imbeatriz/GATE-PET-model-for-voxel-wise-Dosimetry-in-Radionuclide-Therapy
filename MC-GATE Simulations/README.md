@@ -34,7 +34,7 @@ To address this limitation, the ⁹⁰Y positron activity source was modeled usi
 
 - **[Y90_MCDosimetry_Simulation_HU.mac](./MC-GATE%20Simulation%20Files/Y90_MCDosimetry_Simulation_HU.mac)** – MC dosimetry simulation using HU phantom, incorporating non-uniform ⁹⁰Y activity distribution and the DECDATA ⁹⁰Y electron spectrum.
 
-- **[Y90_MCPET_Simulation_Vereos.mac](./MC-GATE%20Simulation%20Files/Y90_MCPET_Simulation_Vereos.mac)** – GATE PET model simulation. Digital twin of the Philips Vereos PET/CT system, using the same patient-specific phantom and non-uniform activity distribution derived from the patient’s PET image.
+- **[Y90_MCPET_Simulation_Vereos.mac](./MC-GATE%20Simulation%20Files/Y90_MCPET_Simulation_Vereos.mac)** – GATE PET model simulation. Digital twin of the Philips Vereos PET/CT system, using patient-specific phantom and non-uniform ⁹⁰Y activity distribution derived from the patient’s PET image.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e74e18d3-98cb-422b-b2b2-3f4da5b5e5d5" width="400" />
