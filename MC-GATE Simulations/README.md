@@ -44,7 +44,7 @@ To address this limitation, the ⁹⁰Y positron activity source was modeled usi
   <em>Figure 1 – GATE PET model</em>
 </p>
 
-- **[Normalization_MCPET_Simulation_Vereos.mac](./MC-GATE%20Simulation%20Files/Normalization_MCPET_Simulation_Vereos.mac)** – Simulation used to generate a PET scanner calibration scan for normalization correction in PET image reconstruction. This setup includes an auxiliary PET acquisition using a thin annular phantom designed to cover all possible lines of response (LORs).
+- **[Normalization_MCPET_Simulation_Vereos.mac](./MC-GATE%20Simulation%20Files/Normalization_MCPET_Simulation_Vereos.mac)** – Simulation used to generate a PET scanner calibration scan for normalization correction in PET image reconstruction. This setup includes an auxiliary PET acquisition using a thin annular phantom filled with Fluor-18 designed to cover all possible lines of response (LORs).
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d190d6a8-dfec-4905-a360-efe9b39d5aec" width="600" />
