@@ -23,7 +23,7 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 </p>
 
 <p align="center">
-  <em>Figure 1 – GATE Range Translator Generator Tool  
+  <em>Figure 1 – GATE Range Translator Generator Tool</em>
 </p>
 
 ### MC-GATE Simulations (GATE 9.2 version)
@@ -54,7 +54,7 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 </p>
 
 <p align="center">
-  <em>Figure 1 – Example execution of the CASToR tools  
+  <em>Figure 1 – Example execution of the CASToR tools</em>
 </p>
 
 - **PyTomography Scripts** - Adaptations to PyTomography source files for compatibilty with GATE PET model. Deep Image Prior (DIP) reconstruction and main reconstruction files, including parameter configurations and corresponding reconstruction results.
@@ -69,7 +69,7 @@ This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radi
 </p>
 
 <p align="center">
-  <em>Figure 1 – MC Dosimetry calibration Tool for RE
+  <em>Figure 1 – MC Dosimetry calibration Tool for RE</em>
 </p>
   
 - **MC-GATE Dosimetry Statistical Uncertainty Tools** – Tools for estimating statistical uncertainty (SU) in MC-GATE simulations for each VOI.
