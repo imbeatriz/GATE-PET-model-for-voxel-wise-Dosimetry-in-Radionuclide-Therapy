@@ -12,7 +12,7 @@ The list-mode ROOT file generated from the GATE PET model was reconstructed into
 
 - **[castor-recon_tool_GUI.py](./CASToR%20Tools/castor-recon_tool_GUI.py)** – GUI application for configuring and running image reconstruction workflows using CASToR. It simplifies interaction with the main reconstruction tool, `castor-recon`, for PET, SPECT, and CT modalities.
 
-**Notes:**
+⚠️**Notes:**
 - Additional information about each tool is available through the `About` section within the GUI.  
 - For detailed command-line options, run the corresponding CASToR tool directly in the terminal (e.g., `castor-recon` or `castor-GATERootToCastor`).
 
@@ -62,7 +62,7 @@ In this work, DIP is used to denoise low-quality PET images and improve signal-t
   <em>Figure 1 – 3D U-Net architecture used for DIP reconstruction</em>
 </p>
 
-**Notes:**
+⚠️**Notes:**
  - Additional details on the DIP framework and parameter settings can be found in the master’s thesis document.
 
 - **[PyTomography_reconstruction.ipynb](./PyTomography%20Scripts/PyTomography_reconstruction.ipynb)** – Main reconstruction notebook containing the workflow used in this project, including parameter configuration and reconstruction steps.
