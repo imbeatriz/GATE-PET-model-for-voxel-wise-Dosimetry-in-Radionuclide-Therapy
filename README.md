@@ -128,13 +128,14 @@ conda activate pytomography_env
 ```bash
 conda install -c conda-forge libparallelproj parallelproj cupy
 ```
-**Note: The cupy package is required to enable GPU acceleration in parallelproj.**
+⚠️ **Note: The cupy package is required to enable GPU acceleration in parallelproj.**
 
 Install PyTomography on Python:
 
 ```bash
 pip install pytomography
 ```
+⚠️ **Note: To run PyTomography with the developed GATE PET model, replace the original `sss.py` and `shared.py` files with the modified versions provided in the *PET Image Reconstruction/PyTomography Scripts* folder.**
 
 Detailed installation and configuration instructions are available in the official documentation:  
 [PyTomography General Documentation](https://pytomography.readthedocs.io/en/latest/index.html)
