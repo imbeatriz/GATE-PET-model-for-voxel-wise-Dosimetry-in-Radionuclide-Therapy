@@ -75,7 +75,7 @@ To assess image quality and quantitative performance, several evaluation metrics
 
 **The following code was developed:** 
 
-- **[CASToR_PET_reconstruction_Analysis.ipynb](./PET%20Reconstructed%20Images%20Analysis/CASToR_PET_reconstruction_Analysis.ipynb)** – Notebook containing the evaluation of multiple reconstruction settings in CASToR, leading to the selection of the final configuration used for GATE-simulated PET images.
+- **[CASToR_PET_reconstruction_Analysis.ipynb](./PET%20Reconstructed%20Images%20Analysis/CASToR_PET_reconstruction_Analysis.ipynb)** – Notebook containing the evaluation of multiple reconstruction settings in CASToR, leading to the selection of the final configuration used for GATE simulated PET images.
 
 - **[CASToR_vs_PyTomography_Reconstructions_Analysis.ipynb](./PET%20Reconstructed%20Images%20Analysis/CASToR_vs_PyTomography_Reconstructions_Analysis.ipynb)** – Notebook presenting the analysis of PyTomography reconstruction settings and a quantitative comparison between the final reconstructed PET images from CASToR and PyTomography against the ground-truth PET image.
 
