@@ -41,6 +41,8 @@ The list-mode ROOT file generated from the GATE PET model was reconstructed into
 
 This folder contains adaptations of PyTomography source (`.py`) files to ensure compatibility with the GATE PET model. It includes the full reconstruction workflow, incorporating Deep Image Prior (DIP) reconstruction, main reconstruction scripts, parameter configurations, and the corresponding reconstruction results.
 
+⚠️ **Note: To run PyTomography with the developed GATE PET model, replace the original `sss.py` and `shared.py` files with the modified versions provided in the *PET Image Reconstruction/PyTomography Scripts* folder.**
+
 **The following code was developed:**
 
 - **[shared.py](./PyTomography%20Scripts/shared.py)** – Contains functions related to **random coincidence correction**.  
