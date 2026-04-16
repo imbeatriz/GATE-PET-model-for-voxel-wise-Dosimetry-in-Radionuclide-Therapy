@@ -8,7 +8,7 @@ Two types of MC-GATE simulations were performed:
 
 ### Y90 Positron Energy Spectrum
 
-Defining the positron emission from ⁹⁰Y in GATE is challenging, as neither GEANT4 nor the DECDATA database includes the minor positron branching ratio associated with the $0^+ \rightarrow 0^+$ transition. 
+Defining the positron emission from ⁹⁰Y in GATE is challenging, as neither GEANT4 or the DECDATA database includes the minor positron branching ratio associated with the $0^+ \rightarrow 0^+$ transition. 
 
 To address this limitation, the ⁹⁰Y positron activity source was modeled using a theoretically estimated continuous positron energy spectrum based on internal pair production (IPP) (Dryák *et al.*, [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0969804319303689)).
 
@@ -58,7 +58,7 @@ To address this limitation, the ⁹⁰Y positron activity source was modeled usi
 
 #### Additional Folders
 
-- **data** – Contains all required input files for MC-GATE simulations, including material definitions, tissue properties, density calibration files, and ⁹⁰Y electron and positron energy spectra.
+- **data** – Contains all required input files for MC-GATE simulations, including material definitions, tissue properties, density calibration files (specific calibration files `GEMINIDensitiesTable.txt` and `GEMINIMaterialsTable.txt`), and ⁹⁰Y electron and positron energy spectra.
 
 - **mac** – Includes auxiliary macro files used by the main simulation scripts, particularly for defining the GATE PET model and scanner geometry.
 
