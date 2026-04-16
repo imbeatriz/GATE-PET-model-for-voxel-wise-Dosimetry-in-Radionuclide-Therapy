@@ -13,7 +13,7 @@ The list-mode ROOT file generated from the GATE PET model was reconstructed into
 - **[castor-recon_tool_GUI.py](./CASToR%20Tools/castor-recon_tool_GUI.py)** – GUI application for configuring and running image reconstruction workflows using CASToR. It simplifies interaction with the main reconstruction tool, `castor-recon`, for PET, SPECT, and CT modalities.
 
 ⚠️**Notes:**
-- Additional information about each tool is available through the `About` section within the GUI.  
+- Additional information about each tool is available through the `About` section.  
 - For detailed command-line options, run the corresponding CASToR tool directly in the terminal (e.g., `castor-recon` or `castor-GATERootToCastor`).
 
 <p align="center">
