@@ -225,7 +225,7 @@
 #=====================================================
 
 # Limit on the total number of primary particles to reduce simulation computational time
-/gate/application/setTotalNumberOfPrimaries 7e9
+/gate/application/setTotalNumberOfPrimaries 3e9
 
 #/gate/application/setTotalNumberOfPrimaries 10  # activate only for visualization
 
