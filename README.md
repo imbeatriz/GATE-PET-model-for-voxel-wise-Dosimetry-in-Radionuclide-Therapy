@@ -11,9 +11,8 @@ The goal of this project is to support treatment planning optimization and post-
 This project implements a full pipeline for voxel-wise dosimetry in ⁹⁰Y radioembolization, combining MC-GATE simulations, PET image reconstruction, and quantitative absorbed dose analysis. The workflow is structured as follows:
 
 <p align="center">
-<img width="2000" alt="githubscheme2" src="https://github.com/user-attachments/assets/ff974355-5fab-4fb2-8d20-723704818b80" />
+<img width="2000" alt="githubscheme2" src="https://github.com/user-attachments/assets/7158b2b3-5290-4f69-97f8-0855a668952f" />
 </p>
-
 
 ## Repository Structure
 
