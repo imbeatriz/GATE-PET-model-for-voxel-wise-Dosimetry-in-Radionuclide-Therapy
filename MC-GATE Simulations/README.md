@@ -91,7 +91,7 @@ Tools for splitting MC-GATE simulations into multiple smaller jobs and executing
     python3 merge_root_files.py ./output merged_simulation.root 
     ```
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e94d9550-4395-4293-80ed-5d8a08e2c03f" width="600" />
+  <img src="https://github.com/user-attachments/assets/5622d8d0-77b4-4a1d-891f-4e3ed965cc05" width="500" />
 </p>
 
 <p align="center">
