@@ -151,3 +151,16 @@ Feel free to reach out if you have any questions or suggestions for improvement:
 If you find this code useful for your research, please consider citing:
 
 > Ornelas, B. (2026). *Development of a PET GATE model for voxel-wise dosimetry in radionuclide therapy*. Master’s thesis, Instituto Superior Técnico, Universidade de Lisboa, Lisbon, Portugal.
+
+The thesis is available at [Scholar@Técnico Lisboa](https://scholar.tecnico.ulisboa.pt/records/Ladc11q98VYFhrrL0NKbR97fV_6eeztnXO3c).
+
+```bibtex
+@mastersthesis{ornelas2026petgate,
+  author  = {Ornelas, B.},
+  title   = {Development of a PET GATE model for voxel-wise dosimetry in radionuclide therapy},
+  school  = {Instituto Superior Técnico, Universidade de Lisboa},
+  address = {Lisbon, Portugal},
+  year    = {2026},
+  type    = {Master's thesis},
+  url     = {https://scholar.tecnico.ulisboa.pt/records/Ladc11q98VYFhrrL0NKbR97fV_6eeztnXO3c}
+}
